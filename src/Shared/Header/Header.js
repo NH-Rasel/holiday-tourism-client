@@ -14,14 +14,15 @@ const Header = () => {
                             <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
                             <Nav.Link as={HashLink} to="/home#destinations">Destinations</Nav.Link>
                             <NavDropdown title="Packages" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item as={HashLink} to="/home#action">Action</NavDropdown.Item>
-                                <NavDropdown.Item as={HashLink} to="/home#action">Another action</NavDropdown.Item>
-                                <NavDropdown.Item as={HashLink} to="/home#action">Something</NavDropdown.Item>
+                                <NavDropdown.Item as={HashLink} to="/home#europe">Europe</NavDropdown.Item>
+                                <NavDropdown.Item as={HashLink} to="/home#asia">Asia</NavDropdown.Item>
+                                <NavDropdown.Item as={HashLink} to="/home#america">America</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Transport" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item as={HashLink} to="/home#action">Action</NavDropdown.Item>
-                                <NavDropdown.Item as={HashLink} to="/home#action">Another action</NavDropdown.Item>
-                                <NavDropdown.Item as={HashLink} to="#action/3.3">Something</NavDropdown.Item>
+                                <NavDropdown.Item as={HashLink} to="/home#Bus">Bus</NavDropdown.Item>
+                                <NavDropdown.Item as={HashLink} to="/home#airlines">Airlines</NavDropdown.Item>
+                                <NavDropdown.Item as={HashLink} to="/home#cruise">Cruise</NavDropdown.Item>
+                                <NavDropdown.Item as={HashLink} to="/home#train">Train</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link as={HashLink} to="/home#blogs">Blogs</Nav.Link>
                             <Nav.Link as={HashLink} to="/home#aboutUs">About Us</Nav.Link>
