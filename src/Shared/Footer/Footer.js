@@ -2,14 +2,14 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="bg-dark p-lg-5">
+        <footer className="sticky-bottom bg-dark py-3 px-3 px-lg-5 pt-lg-5">
             <div className="container">
                 <div className="row g-5">
-                    <div className="col">
+                    <div className="col-12 col-lg-4">
                         <h4 className="fw-bold text-info">Subscribe to our newsletter</h4>
                         <div className="input-group mt-3">
                             <input type="text" className="form-control" placeholder="Enter Your Email" aria-label="Recipient's username" aria-describedby="button-addon2" />
-                            <button className="btn btn-warning" type="button" id="button-addon2">Button</button>
+                            <button className="btn btn-warning" type="button" id="button-addon2">SUBSCRIBE</button>
                         </div>
                         <div className="mt-3">
                             <h4 className="fw-bold text-info">Follow Us</h4>
@@ -20,7 +20,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col-12 col-lg-4">
                         <h4 className="fw-bold text-info">Contact Us</h4>
                         <div className="d-flex justify-content-center align-items-center ms-lg-5">
                             <i style={{ fontSize: '20px', color: 'orange' }} className="fas fa-envelope-open-text me-3"></i>
@@ -38,7 +38,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col-12 col-lg-4">
                         <h4 className="fw-bold text-info">We Accepts</h4>
                         <div>
                             <i style={{ fontSize: '40px', color: 'white' }} className="fab fa-cc-visa m-2"></i>
@@ -48,8 +48,10 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+                <hr className="text-light" />
+                <p className="text-light">Copyright © 2021 <span style={{ color: 'orange' }}>Holiday Tourism </span> | Designed by <span style={{ color: 'orange' }}>NH Rasel</span></p>
             </div>
-        </div>
+        </footer>
     );
 };
 
