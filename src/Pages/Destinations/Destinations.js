@@ -7,7 +7,7 @@ import './Destination.css';
 const Destinations = () => {
     const [startDate, setStartDate] = useState(new Date());
     return (
-        <div className="container">
+        <div id="destinations" className="container mt-5">
             <form className="row row-cols-lg-auto  align-items-center input-field">
                 <div className="col-12 col-lg-3">
                     <label className="visually-hidden" for="specificSizeInputName">Name</label>

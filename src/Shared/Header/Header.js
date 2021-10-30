@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 const Header = () => {
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+            <Navbar collapseOnSelect sticky="top" expand="lg" bg="light" variant="light">
                 <Container>
                     <Navbar.Brand href="#home"><img style={{ width: '120px' }} src="https://i.ibb.co/L5qvNL0/holiday-tourism-1.png" alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

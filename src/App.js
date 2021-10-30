@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Home from './Pages/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
 import Destinations from './Pages//Destinations/Destinations';
 import Header from './Shared/Header/Header';
 import Footer from './Shared/Footer/Footer';
+import Login from './Pages/ConditionalRoute/Login/Login';
+import Home from './Pages/Home/Home';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/destinations">
             <Destinations></Destinations>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
