@@ -1,0 +1,13 @@
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-form{
+    background-image: url('https://i.ibb.co/WtQprfm/background-Img.png');
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: rgb(255, 250, 250);
+    width: 50%;
+    opacity: 0.9;
+}

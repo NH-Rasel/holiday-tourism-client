@@ -1,4 +1,4 @@
-.container img{
+.transport img{
     opacity: 1;
     display: block;
     width: 100%;
@@ -6,12 +6,12 @@
     transition: transform .6s ease;
     backface-visibility: hidden;
 }
-.container img:hover{
+.transport img:hover{
     transform: scale(1.08);
     opacity: 0.6;
 
 }
-Button{
+.transport Button{
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -20,6 +20,6 @@ Button{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
-.container Button:hover{
+.transport Button:hover{
     opacity: 1;
 }
