@@ -18,12 +18,7 @@ const Header = () => {
                                 <NavDropdown.Item as={HashLink} to="/home#asia">Asia</NavDropdown.Item>
                                 <NavDropdown.Item as={HashLink} to="/home#america">America</NavDropdown.Item>
                             </NavDropdown>
-                            <NavDropdown title="Transport" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item as={HashLink} to="/home#Bus">Bus</NavDropdown.Item>
-                                <NavDropdown.Item as={HashLink} to="/home#airlines">Airlines</NavDropdown.Item>
-                                <NavDropdown.Item as={HashLink} to="/home#cruise">Cruise</NavDropdown.Item>
-                                <NavDropdown.Item as={HashLink} to="/home#train">Train</NavDropdown.Item>
-                            </NavDropdown>
+                            <Nav.Link as={HashLink} to="/home#transport">Transport</Nav.Link>
                             <Nav.Link as={HashLink} to="/home#blogs">Blogs</Nav.Link>
                             <Nav.Link as={HashLink} to="/home#aboutUs">About Us</Nav.Link>
                         </Nav>
