@@ -1,0 +1,24 @@
+@media only screen and (min-width: 600px) {
+    .input-field input{
+        margin: 0px 30px 30px 30px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+    }  
+    .input-field button{
+        padding: 4px 30px;
+        margin-top: 18px;
+    }
+    .input-field select{
+        padding: 10px 20px;
+        margin: 0px 30px 30px 30px;
+        border-radius: 5px;
+    }
+    .input-field i {
+        margin: 10px;
+    }
+}
+.input-field{
+    background-color:lightblue;
+    border-radius: 10px;
+}
