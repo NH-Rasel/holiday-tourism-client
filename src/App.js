@@ -8,15 +8,13 @@ import Footer from './Shared/Footer/Footer';
 import Login from './Pages/ConditionalRoute/Login/Login';
 import Home from './Pages/Home/Home';
 import AuthProvider from './Contexts/AuthProvider';
-import Europe from './Pages/Packages/Europe/Europe';
-import Asia from './Pages/Packages/Asia/Asia';
-import America from './Pages/Packages/America/America';
 import TransportDetail from './Pages/PrivateRoute/TransportDetail/TransportDetail';
 import AdminLogin from './Pages/ConditionalRoute/Login/AdminLogin';
 import MyBooking from './Pages/PrivateRoute/MyBooking/MyBooking';
 import AddPackage from './Pages/Admin/AddPackage/AddPackage';
 import ManageBooking from './Pages/Admin/ManageBooking/ManageBooking';
 import AddBlog from './Pages/Admin/AddBlog/AddBlog';
+import PackageDetail from './Pages/PrivateRoute/PackageDetail/PackageDetail';
 
 function App() {
   return (
@@ -34,14 +32,8 @@ function App() {
             <Route path="/destinations">
               <Destinations></Destinations>
             </Route>
-            <PrivateRoute path="/packageDetails/:europe_id">
-              <Europe></Europe>
-            </PrivateRoute>
-            <PrivateRoute path="/packageDetails/:asia_id">
-              <Asia></Asia>
-            </PrivateRoute>
-            <PrivateRoute path="/packageDetails/:america_id">
-              <America></America>
+            <PrivateRoute path="/packageDetails/:packageId">
+              <PackageDetail></PackageDetail>
             </PrivateRoute>
             <PrivateRoute path="/transportDetails">
               <TransportDetail></TransportDetail>

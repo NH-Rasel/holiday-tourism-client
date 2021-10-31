@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Asia = ({ asia }) => {
-    const { _id, title, img, price } = asia;
+
+const AllPackage = ({ allPackage }) => {
+    const { _id, title, img, price } = allPackage;
     return (
         <div>
             <div class="card">
@@ -20,4 +21,4 @@ const Asia = ({ asia }) => {
     );
 };
 
-export default Asia;
+export default AllPackage;

@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../hooks/useAuth';
 
 const Header = () => {
-    const { user, logOut } = useAuth()
+    const { user, logOut } = useAuth();
     return (
         <>
             <Navbar collapseOnSelect sticky="top" expand="lg" bg="light" variant="light">
@@ -15,16 +15,11 @@ const Header = () => {
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={HashLink} to="/home#home" className="text-info fw-bold">Home</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#destinations" className="text-info fw-bold">Destinations</Nav.Link>
-                        <NavDropdown title="Packages" id="collapsible-nav-dropdown" className="text-info fw-bold">
-                            <NavDropdown.Item as={HashLink} to="/home#europe" className="text-info fw-bold">Europe</NavDropdown.Item>
-                            <NavDropdown.Item as={HashLink} to="/home#asia" className="text-info fw-bold">Asia</NavDropdown.Item>
-                            <NavDropdown.Item as={HashLink} to="/home#america" className="text-info fw-bold">America</NavDropdown.Item>
-                        </NavDropdown>
+                        <Nav.Link as={HashLink} to="/home#packages" className="text-info fw-bold">Packages</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#transport" className="text-info fw-bold">Transport</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#blogs" className="text-info fw-bold">Blogs</Nav.Link>
+                        <Nav.Link as={Link} to="/myBooking" className="text-info fw-bold ps-2">My Booking</Nav.Link>
                         <NavDropdown title="Admin Panel" id="collapsible-nav-dropdown" className="text-info fw-bold">
-
-                            <Nav.Link as={Link} to="/myBooking" className="text-info fw-bold ps-2">My Booking</Nav.Link>
                             <Nav.Link as={Link} to="/addPackage" className="text-info fw-bold ps-2">Add Package</Nav.Link>
                             <Nav.Link as={Link} to="/manageBooking" className="text-info fw-bold ps-2">Manage Booking</Nav.Link>
                             <Nav.Link as={Link} to="/addBlog" className="text-info fw-bold ps-2">Add Blog</Nav.Link>
