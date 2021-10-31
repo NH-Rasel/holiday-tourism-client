@@ -34,7 +34,7 @@ const PackageDetail = () => {
                 <h2><i className="fas fa-map-marker-alt fs-4 me-2 text-info"></i>{packages.title}</h2>
                 <p>{packages.description}</p>
                 <h4 className="fw-bold">${packages.price}/per person  |  3day/4 night</h4>
-                <button onClick={() => handleBooking(packages._id)} className="btn btn-warning">Book Now</button>
+                <button onClick={handleBooking} className="btn btn-warning">Book Now</button>
             </div>
             <img style={{ borderRadius: '10px' }} src={packages.img} alt="" />
         </div>
