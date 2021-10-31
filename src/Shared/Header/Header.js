@@ -22,15 +22,22 @@ const Header = () => {
                         </NavDropdown>
                         <Nav.Link as={HashLink} to="/home#transport" className="text-info fw-bold">Transport</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#blogs" className="text-info fw-bold">Blogs</Nav.Link>
-                        <Nav.Link as={HashLink} to="/home#aboutUs" className="text-info fw-bold">About Us</Nav.Link>
+                        <NavDropdown title="Admin Panel" id="collapsible-nav-dropdown" className="text-info fw-bold">
+
+                            <Nav.Link as={Link} to="/myBooking" className="text-info fw-bold ps-2">My Booking</Nav.Link>
+                            <Nav.Link as={Link} to="/addPackage" className="text-info fw-bold ps-2">Add Package</Nav.Link>
+                            <Nav.Link as={Link} to="/manageBooking" className="text-info fw-bold ps-2">Manage Booking</Nav.Link>
+                            <Nav.Link as={Link} to="/addBlog" className="text-info fw-bold ps-2">Add Blog</Nav.Link>
+                        </NavDropdown>
                         <Navbar.Text>
                             <Link to="/login">{user?.displayName}</Link>
                         </Navbar.Text>
                         {
                             user?.email ?
-                                <i className="far fa-user-circle text-info fw-bold ps-2"><i onClick={logOut} className="fas fa-sign-out-alt text-info fw-bold ps-4" style={{ cursor: 'pointer' }}></i></i> :
-                                <Nav.Link as={Link} to="/login" className="text-info fw-bold">Login</Nav.Link>
+                                <i onClick={logOut} className="fas fa-sign-out-alt text-info fw-bold d-flex align-items-center ps-2" style={{ cursor: 'pointer' }}></i> :
+                                <Nav.Link as={Link} to="/login" className="text-info fw-bold d-flex align-items-center">Login<Nav.Link as={Link} to="/adminLogin"><i className="far fa-user-circle fw-bold ps-2">Admin</i></Nav.Link></Nav.Link>
                         }
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

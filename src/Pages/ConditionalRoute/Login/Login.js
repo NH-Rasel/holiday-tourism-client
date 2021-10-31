@@ -1,10 +1,22 @@
 import React from 'react';
+import { useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import logo from '../../../images/btn_google_light_focus_ios.svg';
 import './Login.css';
 
 const Login = () => {
     const { signInUsingGoogle } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home';
+
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+            .then(result => {
+                console.log(result)
+                history.push(redirect_uri);
+            })
+    }
     return (
         <div className="container mb-5">
             <div className="login-form">
@@ -22,7 +34,7 @@ const Login = () => {
                         <button className="btn btn-warning">Login</button>
                     </form>
                     <div>Or Sign In Using</div>
-                    <button style={{ border: 'none', backgroundColor: 'white' }} onClick={signInUsingGoogle}><img style={{ width: '60px' }} src={logo} alt="" /></button>
+                    <button style={{ border: 'none', backgroundColor: 'white' }} onClick={handleGoogleLogin}><img style={{ width: '60px' }} src={logo} alt="" /></button>
                 </div>
             </div>
         </div>

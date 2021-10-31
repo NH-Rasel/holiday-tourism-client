@@ -12,6 +12,11 @@ import Europe from './Pages/Packages/Europe/Europe';
 import Asia from './Pages/Packages/Asia/Asia';
 import America from './Pages/Packages/America/America';
 import TransportDetail from './Pages/PrivateRoute/TransportDetail/TransportDetail';
+import AdminLogin from './Pages/ConditionalRoute/Login/AdminLogin';
+import MyBooking from './Pages/PrivateRoute/MyBooking/MyBooking';
+import AddPackage from './Pages/Admin/AddPackage/AddPackage';
+import ManageBooking from './Pages/Admin/ManageBooking/ManageBooking';
+import AddBlog from './Pages/Admin/AddBlog/AddBlog';
 
 function App() {
   return (
@@ -41,8 +46,23 @@ function App() {
             <PrivateRoute path="/transportDetails">
               <TransportDetail></TransportDetail>
             </PrivateRoute>
+            <PrivateRoute path="/myBooking">
+              <MyBooking></MyBooking>
+            </PrivateRoute>
+            <PrivateRoute path="/addPackage">
+              <AddPackage></AddPackage>
+            </PrivateRoute>
+            <PrivateRoute path="/manageBooking">
+              <ManageBooking></ManageBooking>
+            </PrivateRoute>
+            <PrivateRoute path="/addBlog">
+              <AddBlog></AddBlog>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="/adminLogin">
+              <AdminLogin></AdminLogin>
             </Route>
             <Route path="*">
               <NotFound></NotFound>
