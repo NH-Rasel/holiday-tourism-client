@@ -15,6 +15,7 @@ import AddPackage from './Pages/Admin/AddPackage/AddPackage';
 import ManageBooking from './Pages/Admin/ManageBooking/ManageBooking';
 import AddBlog from './Pages/Admin/AddBlog/AddBlog';
 import PackageDetail from './Pages/PrivateRoute/PackageDetail/PackageDetail';
+import BookingInfo from './Pages/PrivateRoute/BookingInfo/BookingInfo';
 
 function App() {
   return (
@@ -35,10 +36,16 @@ function App() {
             <PrivateRoute path="/packageDetails/:packageId">
               <PackageDetail></PackageDetail>
             </PrivateRoute>
+            <PrivateRoute path="/bookingInfo">
+              <BookingInfo></BookingInfo>
+            </PrivateRoute>
             <PrivateRoute path="/transportDetails">
               <TransportDetail></TransportDetail>
             </PrivateRoute>
             <PrivateRoute path="/myBooking">
+              <MyBooking></MyBooking>
+            </PrivateRoute>
+            <PrivateRoute path="/myBooking/:userId">
               <MyBooking></MyBooking>
             </PrivateRoute>
             <PrivateRoute path="/addPackage">

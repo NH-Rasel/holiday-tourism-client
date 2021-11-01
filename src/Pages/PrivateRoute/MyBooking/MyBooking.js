@@ -5,17 +5,16 @@ import { useParams } from 'react-router';
 
 const MyBooking = () => {
     const { userId } = useParams();
-    const [users, setUsers] = useState({});
+    const [user, setUser] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/user/${userId}`)
+        fetch(`https://holiday-turism.herokuapp.com/packages/${userId}`)
             .then(res => res.json())
-            .then(data => setUsers(data))
+            .then(data => console.log(data))
     }, [])
     return (
-        <div className="container">
-            <h3>{userId}</h3>
-            <ul>Name: {users.displayName}</ul>
+        <div>
+
         </div>
     );
 };

@@ -15,7 +15,7 @@ const AddPackage = () => {
         const description = descriptionRef.current.value;
 
         const newPackage = { title, img, price, description };
-        fetch('http://localhost:5000/packages', {
+        fetch('https://holiday-turism.herokuapp.com/packages', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -41,11 +41,11 @@ const AddPackage = () => {
                 </div>
                 <div class="form-floating mb-3">
                     <input type="link" class="form-control" id="floatingInput" ref={imgRef} placeholder="Image" />
-                    <label for="floatingInput">Image</label>
+                    <label for="floatingInput">Image URL</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="value" class="form-control" id="floatingInput" ref={priceRef} placeholder="Price URL" />
-                    <label for="floatingInput">Price URL</label>
+                    <label for="floatingInput">Price</label>
                 </div>
                 <div class="form-floating">
                     <textarea class="form-control" ref={descriptionRef} placeholder="Description" id="floatingTextarea"></textarea>
