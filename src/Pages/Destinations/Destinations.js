@@ -32,7 +32,7 @@ const Destinations = () => {
                     </select>
                 </div>
                 <div className="col-12 col-lg-3">
-                    <button type="submit" className="btn btn-warning"><i class="fas fa-search"></i>Find Now</button>
+                    <button type="submit" className="btn btn-warning"><i className="fas fa-search"></i>Find Now</button>
                 </div>
             </form>
 

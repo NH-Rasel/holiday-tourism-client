@@ -44,9 +44,9 @@ const UpdateBooking = () => {
         <div className="container m-2 m-lg-5">
             <h3>Update Booking Status</h3>
             <form className="p-1 p-lg-5" style={{ border: '2px solid lightgray', borderRadius: '10px', width: 'auto' }} onSubmit={handleUpdateBooking}>
-                <input class="form-control mb-3" type="text" value={user.email} readOnly aria-label="default input example" />
-                <input class="form-control mb-3" type="text" value={user.title} readOnly aria-label="default input example" />
-                <input onChange={handleStatusChange} class="form-control mb-3" type="text" value={user.status || ''} aria-label="default input example" />
+                <input className="form-control mb-3" type="text" value={user.email} readOnly aria-label="default input example" />
+                <input className="form-control mb-3" type="text" value={user.title} readOnly aria-label="default input example" />
+                <input onChange={handleStatusChange} className="form-control mb-3" type="text" value={user.status || ''} aria-label="default input example" />
                 <input className="btn btn-warning" type="submit" />
             </form>
         </div>

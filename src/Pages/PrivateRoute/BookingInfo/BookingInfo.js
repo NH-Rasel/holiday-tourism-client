@@ -33,7 +33,7 @@ const BookingInfo = () => {
                     <input {...register("price")} type="number" id="floatingTextarea" className="form-control" placeholder="Price" />
                     <label for="floatingTextarea">Price</label>
                 </div>
-                <input {...register("status")} class="form-control mb-3" type="text" value="pending" readOnly aria-label="default input example" />
+                <input {...register("status")} className="form-control mb-3" type="text" value="pending" readOnly aria-label="default input example" />
                 <input className="btn btn-warning" type="submit" />
             </form>
         </div>

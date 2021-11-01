@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Project Name : Holiday Tourism
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+LIVE SITE: (https://holiday-tourism-c9766.web.app/)
 
-## Available Scripts
+## Client side code link:
 
-In the project directory, you can run:
+(https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-NH-Rasel)
 
-### `npm start`
+## Server side code link:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+(https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-NH-Rasel)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## About the project
 
-### `npm test`
+The website is about tourism. It contains different types of tour packages, booking transport ticket, Blogs about tourism of different travellers. You can login your account and can book your package, book ticket etc. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Client Hosting site
 
-### `npm run build`
+The client site hosted on: (https://console.firebase.google.com) 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Server Hosting site
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The server side hosted on: (https://dashboard.heroku.com/apps)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### React Routing site
 
-### `npm run eject`
+(https://reactrouter.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Components are the heart of React's powerful, declarative programming model. React Router is a collection of navigational components that compose declaratively with the application.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Custom Font as
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Roboto: (https://fonts.google.com/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### CSS Framework
 
-## Learn More
+Bootstrap: (https://getbootstrap.com/)
+React-Bootstrap: (https://react-bootstrap.github.io/getting-started/introduction/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Custom Icon as
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Font Awesome: (https://fontawesome.com/)

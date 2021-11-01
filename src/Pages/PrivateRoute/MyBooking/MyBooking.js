@@ -27,7 +27,6 @@ const MyBooking = () => {
                     }
                 })
         }
-
     }
 
     return (
