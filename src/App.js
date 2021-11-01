@@ -16,6 +16,7 @@ import ManageBooking from './Pages/Admin/ManageBooking/ManageBooking';
 import AddBlog from './Pages/Admin/AddBlog/AddBlog';
 import PackageDetail from './Pages/PrivateRoute/PackageDetail/PackageDetail';
 import BookingInfo from './Pages/PrivateRoute/BookingInfo/BookingInfo';
+import UpdateBooking from './Pages/Admin/ManageBooking/UpdateBooking/UpdateBooking';
 
 function App() {
   return (
@@ -53,6 +54,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/manageBooking">
               <ManageBooking></ManageBooking>
+            </PrivateRoute>
+            <PrivateRoute path="/updateBooking/:id">
+              <UpdateBooking></UpdateBooking>
             </PrivateRoute>
             <PrivateRoute path="/addBlog">
               <AddBlog></AddBlog>

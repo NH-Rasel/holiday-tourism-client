@@ -7,8 +7,8 @@ const TransportDetail = () => {
     return (
         <div className="container m-5">
             <form className="p-4" style={{ border: '2px solid lightgray', borderRadius: '10px', width: 'auto' }} action="">
-                <div class="form-floating">
-                    <select class="form-select mb-3" id="floatingSelect" aria-label="Floating label select example">
+                <div className="form-floating">
+                    <select className="form-select mb-3" id="floatingSelect" aria-label="Floating label select example">
                         <option selected>Select your vehicles</option>
                         <option value="1">Bus</option>
                         <option value="2">Airline</option>
@@ -17,12 +17,12 @@ const TransportDetail = () => {
                     </select>
                     <label for="floatingSelect">Choose a option</label>
                 </div>
-                <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="PickUp" />
+                <div className="form-floating mb-3">
+                    <input type="password" className="form-control" id="floatingPassword" placeholder="PickUp" />
                     <label for="floatingPassword">From</label>
                 </div>
-                <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Destination" />
+                <div className="form-floating mb-3">
+                    <input type="password" className="form-control" id="floatingPassword" placeholder="Destination" />
                     <label for="floatingPassword">To</label>
                 </div>
                 <div className="text-start">

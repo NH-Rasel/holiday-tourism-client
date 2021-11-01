@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+
 const MyBooking = () => {
     const [user, setUser] = useState([]);
 
@@ -39,7 +40,8 @@ const MyBooking = () => {
                     <h5>Package: <span className="fw-bold">{users.title}</span></h5>
                     <p>Price: ${users.price}</p>
                     <p>Booking date: {users.date}</p>
-                    <button onClick={() => handleDeleteBooking(users._id)} className="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+                    <p>Status: {users.status}</p>
+                    <button onClick={() => handleDeleteBooking(users._id)} className="btn btn-danger"><i className="far fa-trash-alt"></i></button>
                 </div>)
             }
         </div>

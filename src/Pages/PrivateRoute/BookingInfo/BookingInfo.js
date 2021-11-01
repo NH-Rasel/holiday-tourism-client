@@ -16,23 +16,24 @@ const BookingInfo = () => {
     return (
         <div className="container m-2 m-lg-5">
             <form className="p-1 p-lg-5" style={{ border: '2px solid lightgray', borderRadius: '10px', width: 'auto' }} onSubmit={handleSubmit(onSubmit)}>
-                <div class="form-floating mb-3">
-                    <input {...register("email")} type="text" class="form-control" placeholder="Your Email" />
+                <div className="form-floating mb-3">
+                    <input {...register("email")} type="text" className="form-control" placeholder="Your Email" />
                     <label for="floatingTextarea">Your Email</label>
                 </div>
-                <div class="form-floating mb-3">
-                    <input {...register("date")} type="text" id="floatingTextarea" class="form-control" placeholder="dd/mm/yy" />
+                <div className="form-floating mb-3">
+                    <input {...register("date")} type="text" id="floatingTextarea" className="form-control" placeholder="dd/mm/yy" />
                     <label for="floatingTextarea">dd/mm/yy</label>
                 </div>
-                <div class="form-floating mb-3">
-                    <input {...register("title")} type="text" id="floatingTextarea" class="form-control"
+                <div className="form-floating mb-3">
+                    <input {...register("title")} type="text" id="floatingTextarea" className="form-control"
                         placeholder="Package Title" />
                     <label for="floatingTextarea">Package Title</label>
                 </div>
-                <div class="form-floating mb-3">
-                    <input {...register("price")} type="number" id="floatingTextarea" class="form-control" placeholder="Price" />
+                <div className="form-floating mb-3">
+                    <input {...register("price")} type="number" id="floatingTextarea" className="form-control" placeholder="Price" />
                     <label for="floatingTextarea">Price</label>
                 </div>
+                <input {...register("status")} class="form-control mb-3" type="text" value="pending" readOnly aria-label="default input example" />
                 <input className="btn btn-warning" type="submit" />
             </form>
         </div>
