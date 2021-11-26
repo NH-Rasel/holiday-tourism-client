@@ -4,7 +4,7 @@ LIVE SITE: (https://holiday-tourism-c9766.web.app/)
 
 ## Client side code link:
 
-(https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-NH-Rasel)
+(https://github.com/NH-Rasel/holiday-tourism-client)
 
 ## Server side code link:
 
